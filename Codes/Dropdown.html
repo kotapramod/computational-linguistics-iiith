@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.a{
+ color:darkblue;
+ font-size:20px;
+ } 
+i{color:blue;}
+div{text-align:center;}
+p{text-align:center;}
+ </style>
+ </head>
+<body>
+<form><br><br>
+<div>
+  <label for="language"></label>
+  <select id="mySelect" onchange="myFunction()" >
+    <option value="select language">select language</option>
+   <p><option value="<b>Form a sentence (Declarative or Interrogative or any other type) from the given words</b><br>
+                     <i>(select the buttons in proper order)</i>">English</option></p>
+    <p><option value="<b>Form a sentence (Declarative or Interrogative or any other type) from the given words</b><br>
+            <i>(select the buttons in proper order)</i>">Hindi</option></p>
+  </select><br><br>
+</div>
+<p class="a" id="demo"></p>
+ <script>
+function myFunction() {
+var x= document.getElementById("mySelect").value;
+  document.getElementById("demo").innerHTML = x;
+}
+</script>
+</form>
+
+</body>
+</html>
