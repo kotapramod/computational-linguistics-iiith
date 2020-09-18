@@ -1,102 +1,229 @@
-var sentence1_1=["a.John ate an apple before afternoon"];
-var sentence1_2=["b.before afternoon John ate an apple"];	
-var sentence1_3=["c.John before afternoon ate an apple"];
-var sentence2_1=["a.some students like to study in the night"];
-var sentence2_2=["b.at night some students like to study"];
-var sentence3_1=["a.John and Mary went to church"];
-var sentence3_2=["b.Mary and John went to church"];
-var sentence4_1=["a.John went to church after eating"];	
-var sentence4_2=["b.after eating John went to church"];
-var sentence4_3=["c.John after eating went to church"];
-var sentence5_1=["a.did he go to market"];
-var sentence5_2=["b.he did go to market"];
-var sentence6_1=["a.the woman who called my sister sells cosmetics"];
-var sentence6_2=["b.the woman who sells cosmetics called my sister"];
-var sentence6_3=["c.my sister who sells cosmetics called the woman"];
-var sentence6_4=["d.my sister who called the woman sells cosmetics"];
-var sentence7_1=["a.John goes to the library and studies"];
-var sentence7_2=["b.John studies and goes to the library"];
-var sentence8_1=["a.John ate an apple so did she"];
-var sentence8_2=["b.she ate an apple so did John"];
-var sentence9_1=["a.the teacher returned the book after she noticed the error"];
-var sentence9_2=["b.the teacher noticed the error after she returned the book"];
-var sentence9_3=["c.after the teacher returned the book she noticed the error"];
-var sentence9_4=["d.after the teacher noticed the error she returned the book"];
-var sentence9_5=["e.she returned the book after the teacher noticed the error"];
-var sentence9_6=["f.she noticed the error after the teacher returned the book"];
-var sentence9_7=["g.after she returned the book the teacher noticed the error"];
-var sentence9_8=["h.after she noticed the error the teacher returned the book"];
-var sentence10_1=["a.I told her that I bought a book yesterday"];
-var sentence10_2=["b.I told her yesterday that I bought a book"];
-var sentence10_3=["c.yesterday I told her that I bought a book"];
-var sentence10_4=["d.I bought a book that I told her yesterday"];
-var sentence10_5=["e.I bought a book yesterday that I told her"];	
-var sentence10_6=["f.yesterday I bought a book that I told her"];
-
-var word1_1=["a.राम और श्याम बाजार गयें"];
-var word1_2=["b.राम और श्याम गयें बाजार"];
-var word1_3=["c.बाजार गयें राम और श्याम"];
-var word1_4=["d.गयें बाजार राम और श्याम"];
-var word2_1=["a.राम सोया और श्याम भी"];
-var word2_2=["b.श्याम सोया और राम भी"];
-var word2_3=["c.सोया श्याम और राम भी"];
-var word2_4=["d.सोया राम और श्याम भी"];
-var word3_1=["a.मैंने उसे बताया कि राम सो रहा है"];
-var word3_2=["b.मैंने उसे बताया कि सो रहा है राम"];
-var word3_3=["c.उसे मैंने बताया कि राम सो रहा है"];
-var word3_4=["d.उसे मैंने बताया कि सो रहा है राम"];
-var word3_5=["e.मैंने बताया उसे कि राम सो रहा है"];
-var word3_6=["f.मैंने बताया उसे कि सो रहा है राम"];
-var word3_7=["g.उसे बताया मैंने कि राम सो रहा है"];
-var word3_8=["h.उसे बताया मैंने कि सो रहा है राम"];
-var word3_9=["i.बताया मैंने उसे कि राम सो रहा है"];
-var word3_10=["j.बताया मैंने उसे कि सो रहा है राम"];
-var word3_11=["k.बताया उसे मैंने कि राम सो रहा है"];
-var word3_12=["l.बताया उसे मैंने कि सो रहा है राम"];
-var word4_1=["a.राम खाकर सोया"];
-var word4_2=["b.खाकर राम सोया"];
-var word4_3=["c.राम सोया खाकर"];
-var word4_4=["d.खाकर सोया राम"];
-var word4_5=["e.सोया राम खाकर"];
-var word4_6=["f.सोया खाकर राम"];
-var word5_1=["a.बिल्लियों को मारकर कुत्ता सो गया"];	
-var word5_2=["b.मारकर बिल्लियों को कुत्ता सो गया"];	 
-var word5_3=["c.बिल्लियों को मारकर सो गया कुत्ता"];	
-var word5_4=["d.मारकर बिल्लियों को सो गया कुत्ता"];	
-var word5_5=["e.कुत्ता सो गय बिल्लियों को मारकर"];	
-var word5_6=["f.कुत्ता सो गया मारकर बिल्लियों को"];	
-var word5_7=["g.सो गया कुत्ता बिल्लियों को मारकर"];
-var word5_8=["h.सो गया कुत्ता मारकर बिल्लियों को"];
-var word6_1=["a.एक लाल किताब वहाँ है"];
-var word6_2=["b.एक लाल किताब है वहाँ"];
-var word6_3=["c.वहाँ है एक लाल किताब"];
-var word6_4=["d.है वहाँ एक लाल किताब"];
-var word7_1=["a.एक बड़ी सी किताब वहाँ है"];	
-var word7_2=["b.एक बड़ी सी किताब है वहाँ"];
-var word7_3=["c.बड़ी सी एक किताब वहाँ है"];
-var word7_4=["d. बड़ी सी एक किताब है वहाँ"];
-var word7_5=["e.वहाँ है एक बड़ी सी किताब"];
-var word7_6=["f.वहाँ है बड़ी सी एक किताब"];
-var word7_7=["g.है वहाँ एक बड़ी सी किताब"];
-var word7_8=["h.है वहाँ बड़ी सी एक किताब"];
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+function arr(array,element){
+    for(i=0;i<array.length;i++){
+        if(array[i]+" "==element){
+            return true;
+        }
+    }
+    return false;
+}
+function Eng(){
+    var corpusEng=[["John ate an apple before afternoon","before afternoon John ate an apple","John before afternoon ate an apple"],
+            ["some students like to study in the night","at night some students like to study"],
+            ["John and Mary went to church","Mary and John went to church"],
+            ["John went to church after eating","after eating John went to church","John after eating went to church"],
+            ["did he go to market","he did go to market"],
+            ["the woman who called my sister sells cosmetics","the woman who sells cosmetics called my sister","my sister who sells cosmetics called the woman","my sister who called the woman sells cosmetics"],
+            ["John goes to the library and studies","John studies and goes to the library"],
+            ["John ate an apple so did she","she ate an apple so did John"],
+            ["the teacher returned the book after she noticed the error","the teacher noticed the error after she returned the book","after the teacher returned the book she noticed the error","after the teacher noticed the error she returned the book","she returned the book after the teacher noticed the error","she noticed the error after the teacher returned the book","after she returned the book the teacher noticed the error","after she noticed the error the teacher returned the book"],
+            ["I told her that I bought a book yesterday","I told her yesterday that I bought a book","yesterday I told her that I bought a book","I bought a book that I told her yesterday","I bought a book yesterday that I told her","yesterday I bought a book that I told her"]];
+    var ranInd=Math.floor(Math.random()*10);
+    var list=corpusEng[ranInd][0].split(" "),ranList=[],ind,size,count=0;
+        var crct=corpusEng[ranInd];
+        size=list.length;
+        for(i=0;i<size;i++){
+            ind=Math.floor(Math.random()*list.length);
+            ranList.push(list[ind])
+            list.splice(ind,1);
+        }
+        var buttons1=[];
+        var d=document.getElementById("english_content");
+        var h=document.createElement("h3");
+        var sp=document.createElement("h2");
+        var reForm=document.createElement("input");
+        var checkSentence=document.createElement("input");
+        var ans=document.createElement("h1");
+        var show=document.createElement("input");
+        var answers=document.createElement("p");
+        reForm.onclick=function(){
+            for(i=0;i<size;i++)
+                buttons1[i].style.display="inline";
+            sp.innerHTML="";
+            this.style.display="none";
+            ans.innerHTML="";
+            checkSentence.style.display="none";
+            show.style.display="none";
+            answers.innerHTML="";
+            count=0;
+        }
+ reForm.type="button";
+        reForm.value="Reform Sentence";
+        checkSentence.type="button";
+        checkSentence.value="Check Correctness";
+        for(i=0;i<ranList.length;i++)
+            buttons1.push(0);
+        for(i=0;i<ranList.length;i++){
+            buttons1[i]=document.createElement("input");
+            buttons1[i].type="button";
+            buttons1[i].value=ranList[i];
+            buttons1[i].onclick=function(){
+                h.innerHTML="Formed Sentence";
+                count+=1;
+                d.append(h);
+                var str=sp.innerHTML;
+                str+=this.value;
+                str+=" ";
+                sp.innerHTML=str;
+                d.append(sp);
+                d.append(reForm);
+                if(count==size){
+                    d.append(checkSentence);
+                    checkSentence.style.display="inline";
+                }
+                reForm.style.display="inline";
+                this.style.display="none";
+            }
+            d.appendChild(buttons1[i]);
+        }
+        checkSentence.onclick=function(){
+            var sentence=sp.innerHTML;
+            show.type="button";
+            show.value="Show Answer(s)";
+            if(arr(crct,sentence)){
+                ans.innerHTML="Correct Answer";
+                ans.style.color="green";
+            }
+            else{
+                ans.innerHTML="Wrong Answer!";
+                d.append(show);
+                show.style.display="inline";
+                ans.style.color="red";
+            }
+            this.style.display="none";
+            d.append(ans);
+            ans.style.display="block";
+        }
+        show.onclick=function(){
+            for(i=0;i<crct.length;i++){
+                answers.innerHTML+=crct[i]+"<br>";
+            }
+            d.append(answers);
+            answers.style.display="block";
+        }
+}
+function Hin(){
+    corpusHin=[["राम और श्याम बाजार गयें","राम और श्याम गयें बाजार","बाजार गयें राम और श्याम","गयें बाजार राम और श्याम"],
+            ["राम सोया और श्याम भी","श्याम सोया और राम भी","सोया श्याम और राम भी","सोया राम और श्याम भी"],
+            ["मैंने उसे बताया कि राम सो रहा है","मैंने उसे बताया कि सो रहा है राम","उसे मैंने बताया कि राम सो रहा है","उसे मैंने बताया कि सो रहा है राम","मैंने बताया उसे कि राम सो रहा है","मैंने बताया उसे कि सो रहा है राम","उसे बताया मैंने कि राम सो रहा है","उसे बताया मैंने कि सो रहा है राम","बताया मैंने उसे कि राम सो रहा है","बताया मैंने उसे कि सो रहा है राम","बताया उसे मैंने कि राम सो रहा है","बताया उसे मैंने कि सो रहा है राम"],
+            ["राम खाकर सोया","खाकर राम सोया","राम सोया खाकर","खाकर सोया राम","सोया राम खाकर","सोया खाकर राम"],
+            ["क्या वो बाजार गया","वो क्या बाजार गया","क्या बाजार वो गया","वो बाजार क्या गया","बाजार क्या वो गया","बाजार वो क्या गया","क्या वो गया बाजार","वो क्या गया बाजार","क्या गया वो बाजार","वो गया क्या बाजार","गया क्या वो बाजार","गया वो क्या बाजार","गया क्या बाजार वो","क्या गया बाजार वो","गया बाजार क्या वो","क्या बाजार गया वो","बाजार गया क्या वो","बाजार गया क्या वो","वो बाजार गया क्या","बाजार वो गया क्या","बाजार गया वो क्या","वो गया बाजार क्या","गया वो बाजार क्या","गया बाजार वो क्या"],
+            ["बिल्लियों को मारकर कुत्ता सो गया","मारकर बिल्लियों को कुत्ता सो गया","बिल्लियों को मारकर सो गया कुत्ता","मारकर बिल्लियों को सो गया कुत्ता","कुत्ता सो गया बिल्लियों को मारकर","कुत्ता सो गया मारकर बिल्लियों को","सो गया कुत्ता बिल्लियों को मारकर","सो गया कुत्ता मारकर बिल्लियों को"],
+            ["एक लाल किताब वहाँ है","एक लाल किताब है वहाँ","वहाँ है एक लाल किताब","है वहाँ एक लाल किताब"],
+            ["एक बड़ी सी किताब वहाँ है","एक बड़ी सी किताब है वहाँ","बड़ी सी एक किताब वहाँ है","बड़ी सी एक किताब है वहाँ","वहाँ है एक बड़ी सी किताब","वहाँ है बड़ी सी एक किताब","है वहाँ एक बड़ी सी किताब","है वहाँ बड़ी सी एक किताब"]];
+    var ranInd=Math.floor(Math.random()*8);
+    var list=corpusHin[ranInd][0].split(" "),ranList=[],ind,size,count=0;
+    var crct=corpusHin[ranInd];
+    size=list.length;
+    for(i=0;i<size;i++){
+        ind=Math.floor(Math.random()*list.length);
+        ranList.push(list[ind])
+        list.splice(ind,1);
+    }
+    var buttons2=[];
+    var d=document.getElementById("hindi_content");
+    var h=document.createElement("h3");
+    var sp=document.createElement("h2");
+    var reForm=document.createElement("input");
+    var checkSentence=document.createElement("input");
+    var ans=document.createElement("h1");
+    var show=document.createElement("input");
+    var answers=document.createElement("p");
+    reForm.onclick=function(){
+        for(i=0;i<size;i++)
+            buttons2[i].style.display="inline";
+        sp.innerHTML="";''
+        this.style.display="none";
+        ans.innerHTML="";
+        checkSentence.style.display="none";
+        show.style.display="none";
+        answers.innerHTML="";
+        count=0;
+    }
+    reForm.type="button";
+    reForm.value="Reform Sentence";
+    checkSentence.type="button";
+    checkSentence.value="Check Correctness";
+    for(i=0;i<ranList.length;i++)
+        buttons2.push(0);
+    for(i=0;i<ranList.length;i++){
+        buttons2[i]=document.createElement("input");
+        buttons2[i].type="button";
+        buttons2[i].value=ranList[i];
+        buttons2[i].onclick=function(){
+            h.innerHTML="Formed Sentence";
+            count+=1;
+            d.append(h);
+            var str=sp.innerHTML;
+            str+=this.value;
+            str+=" ";
+            sp.innerHTML=str;
+            d.append(sp);
+            d.append(reForm);
+            if(count==size){
+                d.append(checkSentence);
+                checkSentence.style.display="inline";
+            }
+            reForm.style.display="inline";
+            this.style.display="none";
+        }
+        d.appendChild(buttons2[i]);
+    }
+    checkSentence.onclick=function(){
+        var sentence=sp.innerHTML;
+        show.type="button";
+        show.value="Show Answer(s)";
+        if(arr(crct,sentence)){
+            ans.innerHTML="Correct Answer";
+            ans.style.color="green";
+        }
+        else{
+            ans.innerHTML="Wrong Answer!";
+            d.append(show);
+            show.style.display="inline";
+            ans.style.color="red";
+        }
+        this.style.display="none";
+        d.append(ans);
+        ans.style.display="block";
+    }
+    show.onclick=function(){
+        for(i=0;i<crct.length;i++){
+            answers.innerHTML+=crct[i]+"<br>";
+        }
+        d.append(answers);
+        answers.style.display="block";
+    }
+}
+function genRandom(){
+    var lan=document.getElementById("language").value;
+    if(lan=="eng"){
+        /*for(i=0;i<size;i++)
+                buttons[i].remove();
+            sp.remove();
+            this.remove();
+            ans.remove();
+            checkSentence.remove();
+            show.remove();
+            answers.remove();*/
+        document.getElementById("hindi_content").style.display="none";
+        document.getElementById("english_content").style.display="block";
+        Eng();
+    }
+    else if(lan=="hin"){
+        /*for(i=0;i<size;i++)
+                buttons[i].remove();
+            sp.remove();
+            this.remove();
+            ans.remove();
+            checkSentence.remove();
+            show.remove();
+            answers.remove();*/
+        document.getElementById("english_content").style.display="none";
+        document.getElementById("hindi_content").style.display="block";
+        Hin();
+    }
+    else{
+        document.getElementById("hindi_content").style.display="none";
+        document.getElementById("english_content").style.display="none";
+    }
+} 
